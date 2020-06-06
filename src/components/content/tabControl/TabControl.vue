@@ -26,7 +26,9 @@
     },
     methods:{
       itemClick(index){
-        this.currentIndex=index
+        this.currentIndex=index;
+        // 内部向外部传输数据
+        this.$emit('tabClick',index)
       }
     }
   }
